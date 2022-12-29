@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    
+    <form class='survey-form'>
+      <h1>University Dev Form</h1>
+      <label class="input-label">
+        Name:
+        <input id='name' type='text' placeholder='Nome' required></input>
+      </label>
+      <label class="input-label">
+        E-mail:
+        <input id="email" type="email" placeholder='E-mail' required></input>
+      </label>
+      <label class="input-label">
+        Phone Number:
+        <input id="number" type="number" placeholder='Nº' min='0' max='999999999999999' required></input>
+      </label>
+
+      <h2>Quais suas atividades favoritas dentro do campus?</h2>
+      <select id="dropdown">
+        <option value="01">Teste</option>
+        <option value="02">exemplo2</option>
+        <option value="03">exemplo3</option>
+        <option value="04">exemplo4</option>
+      </select>
+
+      <h2>Qual seu nivel de satifação com a instituição?</h2>
+      <div class="input-radio-container">
+        <div class="input-radio">
+            <input type='radio' value="1" name="UM">Ótimo
+        </div>
+    
+        <div class="input-radio">
+            <input type='radio' value="2" name="UM">Bom
+        </div>
+    
+        <div class="input-radio">
+            <input type='radio' value="3" name="UM">Médio
+        </div>
+    
+        <div class="input-radio">
+            <input type='radio' value="4" name="UM">Ruim
+        </div>
+      </div>
+
+
+      <h2>Qual sua matéria favorita dentro do seu curso?</h2>
+      <select id="dropdown">
+        <option value="01">Teste</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+      </select>
+
+      <h2>Recomendaria essa instituição para algum amigo?</h2>
+      <div class="input-checkbox">
+        <div class="checkbox">
+            <input type="checkbox" value="1" name="CC">Com certeza
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" value="2" name="C">Claro
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" value="3" name="S">Sim
+        </div>
+        <div class="checkbox"> 
+            <input type="checkbox" value="4" name="N">Não
+        </div>    
+        <div class="checkbox">
+            <input type="checkbox" value="5" name="J">Jamais
+        </div>
+      </div>  
+      
+      
+      <h2>Algum comentário ou sugestão?</h2>
+      <textarea></textarea>
+      
+      <button id="submit" type="submit">Enviar</button>
+    
+      
+    </form>
+  </div>
+
+</body>
+</html>
